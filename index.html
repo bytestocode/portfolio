@@ -40,6 +40,11 @@
         <li class="navbar__menu__item">Testimonials</li>
         <li class="navbar__menu__item">Contact</li>
       </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home -->
@@ -55,7 +60,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
         내일을 설계하는 건축학을 전공하였고, 오늘을 모험하는 개발자가 되고자
@@ -68,7 +73,13 @@
           </div>
           <div class="major__title">Weapons</div>
           <div class="major__description">
-            HTML, CSS, JavaScript, Java, Python, Dart, Swift, Kotlin
+            HTML, SCSS, JavaScript
+          </div>
+          <div class="major__description">
+            Java, Python
+          </div>
+          <div class="major__description">
+            Dart, Swift, Kotlin
           </div>
         </div>
         <div class="major">
@@ -77,8 +88,13 @@
           </div>
           <div class="major__title">Active Skills</div>
           <div class="major__description">
-            React.js, Vue.js, Svelte, Node.js, Spring, Django, Flutter, iOS,
-            Android
+            React.js, Vue.js
+          </div>
+          <div class="major__description">
+            Express.js, Spring, Django
+          </div>
+          <div class="major__description">
+            Flutter, iOS, Android
           </div>
         </div>
         <div class="major">
@@ -93,129 +109,176 @@
         <div class="job">
           <img src="imgs/jobs/hyu.png" alt="HYU" class="job__logo" />
           <p class="job__name">한양대학교 건축학부</p>
+          <p class="job__div">|</p>
           <p class="job__period">2009/03 ~ 2016/02</p>
         </div>
         <div class="job">
           <img src="imgs/jobs/lotte.png" alt="lotte e&c" class="job__logo" />
           <p class="job__name">롯데건설</p>
+          <p class="job__div">|</p>
           <p class="job__period">2016/02 ~ 2021/10</p>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>삼각형 인재가 되고 싶은 개발자 협업하는 개발자 성장하는 개발자</p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>90%</span>
+    <section id="skills" class="section">
+      <div class="section__container"><h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>삼각형 인재가 되고 싶은 개발자 협업하는 개발자 성장하는 개발자</p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
             </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Node.js</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"></div>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>80%</span>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li>
+                  <span>VS Code</span>
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>5</span>
+                </li>
+              </ul>
             </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JavaScript</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>React.js</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
+            <div class="etc">
+              <h3 class="skillset__title">ETC</h3>
+              <ul class="etc__list">
+                <li>
+                  <span>git</span>
+                  <span>1</span>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>Node.js</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li>
-                <span>VS Code</span>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>5</span>
-              </li>
-            </ul>
-          </div>
-          <div class="etc">
-            <h3 class="skillset__title">ETC</h3>
-            <ul class="etc__list">
-              <li>
-                <span>git</span>
-                <span>1</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </div></div>
+      
     </section>
 
     <!-- Work -->
-    <section id="work">
-      <h1>My work</h1>
-      <i class="fas fa-dragon"></i>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn">
-          All<span class="category__count">9</span>
-        </button>
-        <button class="category__btn">
-          Font-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Mobile<span class="category__count">3</span>
-        </button>
-      </div>
+    <section id="work" class="section">
+      <section class="section__container">
+        <h1>My work</h1>
+        <h3><i class="fas fa-dragon"></i> Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn active">
+            All<span class="category__count">9</span>
+          </button>
+          <button class="category__btn">
+            Font-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn">
+            Back-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn">
+            Mobile<span class="category__count">3</span>
+          </button>
+        </div>
 
-      <div class="work__projects">
-        <a href="" class="project" target="_blank">
-          <img class="project__img" src="imgs/projects/project1.png" alt="" />
-          <div class="project__description">
-            <h3>Title</h3>
-            <span>Stack</span>
-          </div>
-        </a>
-      </div>
+        <div class="work__projects">
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>박기사 보드판</h3>
+              <span>Java, Android</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>동담당</h3>
+              <span>Dart, Flutter</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>코코아 클론</h3>
+              <span>HTML, CSS</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>포트폴리오</h3>
+              <span>HTML, CSS</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>모멘텀 클론</h3>
+              <span>HTML, CSS, JavaScript</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>유튜브 클론</h3>
+              <span>Node.js, Webpack</span>
+            </div>
+          </a>
+          <a href="" class="project" target="_blank">
+            <img class="project__img" src="imgs/projects/project1.png" alt="" />
+            <div class="project__description">
+              <h3>게시판</h3>
+              <span>Node.js</span>
+            </div>
+          </a>
+        </div>
+      </section>
     </section>
 
     <!-- Testimonials -->
-    <section id="testmonials">
+    <section id="testimonials" class="section">
+      <section class="section__container">
       <h1>명언</h1>
       <h3>삶의 방향성</h3>
       <div class="testimonials">
@@ -232,7 +295,6 @@
           </div>
         </div>
         <div class="testimonial">
-          <img src="" alt="People" class="testimonial__avatar" />
           <div class="testimonial__speech-bubble">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
@@ -242,13 +304,15 @@
             </p>
             <p class="name"><a href="">소크라테스</a> / 옛날사람</p>
           </div>
+          <img src="" alt="People" class="testimonial__avatar" />
         </div>
       </div>
+      </section>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <h1 class="contact__title">편하게 연락주세요</h1>
+    <section id="contact" class="section">
+      <h1 class="contact__title">편하게 연락주세요 ; )</h1>
       <h2 class="contact__email">reload1bronze@gmail.com</h2>
       <div class="contact__links">
         <a href="https://github.com/reload1bronze" target="_blank">
