@@ -1,332 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ninestone's Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio for newbie programmer Ninestone"
-    />
-    <meta name="author" content="Ninestone" />
-    <link rel="icon" type="image/png" href="imgs/favicon_tiny.png" />
-    <script
-      src="https://kit.fontawesome.com/9774420514.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ninestone's Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio for newbie programmer Ninestone"
+  />
+  <meta name="author" content="Ninestone"/>
+  <link rel="icon" type="image/png" href="imgs/favicon_tiny.png"/>
+  <script
+    src="https://kit.fontawesome.com/9774420514.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="main.js" defer></script>
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="imgs/favicon_tiny.png" alt="favicon" />
-        <a href="#">Ninestone</a>
+<body>
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="navbar__logo">
+    <img src="imgs/favicon_tiny.png" alt="favicon"/>
+    <a href="#">Ninestone</a>
+  </div>
+  <ul class="navbar__menu">
+    <li class="navbar__menu__item active" data-link="#home">Home</li>
+    <li class="navbar__menu__item" data-link="#about">About</li>
+    <li class="navbar__menu__item" data-link="#skills">Skills</li>
+    <li class="navbar__menu__item" data-link="#work">My work</li>
+    <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+    <li class="navbar__menu__item" data-link="#contact">Contact</li>
+  </ul>
+
+  <!-- Toggle button -->
+  <button class="navbar__toggle-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+
+<!-- Home -->
+<section id="home">
+  <div class="home__container">
+    <img
+      src="imgs/profile.png"
+      alt="Ninestone's profile photo"
+      class="home__avatar"
+    />
+    <h1 class="home__title">안녕하세요,<br/>집구석 모험가입니다.</h1>
+    <h2 class="home__description">오늘을 모험하는 리액트 개발자입니다.</h2>
+    <button class="home__contact" data-link="#contact">CONTACT ME</button>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section section__container">
+  <h1>About me</h1>
+  <p>
+    <i class="fas fa-compass"></i> 내일을 설계하는 건축학을 전공하였고, 오늘을 모험하는 개발자가 되고자
+    합니다.
+  </p>
+  <div class="about__majors">
+    <div class="major">
+      <div class="major__icon">
+        <i class="fas fa-magic"></i>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">My work</li>
-        <li class="navbar__menu__item">Testimonials</li>
-        <li class="navbar__menu__item">Contact</li>
-      </ul>
+      <div class="major__title">Weapons</div>
+      <div class="major__description">
+        HTML, SCSS, JavaScript
+      </div>
+      <div class="major__description">
+        Java, Python
+      </div>
+      <div class="major__description">
+        Dart, Swift, Kotlin
+      </div>
+    </div>
+    <div class="major">
+      <div class="major__icon">
+        <i class="fas fa-meteor"></i>
+      </div>
+      <div class="major__title">Active Skills</div>
+      <div class="major__description">
+        React.js, Vue.js
+      </div>
+      <div class="major__description">
+        Express.js, Spring, Django
+      </div>
+      <div class="major__description">
+        Flutter, iOS, Android
+      </div>
+    </div>
+    <div class="major">
+      <div class="major__icon">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <div class="major__title">Passive Skills</div>
+      <div class="major__description">git, VS Code</div>
+    </div>
+  </div>
+  <div class="about__jobs">
+    <div class="job">
+      <img src="imgs/jobs/hyu.png" alt="HYU" class="job__logo"/>
+      <p class="job__name">한양대학교 건축학부</p>
+      <p class="job__div">|</p>
+      <p class="job__period">2009/03 ~ 2016/02</p>
+    </div>
+    <div class="job">
+      <img src="imgs/jobs/lotte.png" alt="lotte e&c" class="job__logo"/>
+      <p class="job__name">롯데건설</p>
+      <p class="job__div">|</p>
+      <p class="job__period">2016/02 ~ 2021/10</p>
+    </div>
+  </div>
+</section>
 
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
+<!-- Skills -->
+<section id="skills" class="section">
+  <div class="section__container"><h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p><i class="fas fa-fire"></i> 삼각형 인재가 되고 싶은 개발자 협업하는 개발자 성장하는 개발자</p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>JavaScript</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>React.js</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>Node.js</span>
+            <span>70%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li>
+              <span>VS Code</span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>5</span>
+            </li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset__title">ETC</h3>
+          <ul class="etc__list">
+            <li>
+              <span>git</span>
+              <span>1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Work -->
+<section id="work" class="section">
+  <section class="section__container">
+    <h1>My work</h1>
+    <h3><i class="fas fa-dragon"></i> Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn selected" data-filter="*">
+        All<span class="category__count">9</span>
       </button>
-    </nav>
+      <button class="category__btn" data-filter="front-end">
+        Font-end<span class="category__count">3</span>
+      </button>
+      <button class="category__btn" data-filter="back-end">
+        Back-end<span class="category__count">3</span>
+      </button>
+      <button class="category__btn" data-filter="mobile">
+        Mobile<span class="category__count">3</span>
+      </button>
+    </div>
 
-    <!-- Home -->
-    <section id="home">
-      <img
-        src="imgs/profile.png"
-        alt="Ninestone's profile photo"
-        class="home__avatar"
-      />
-      <h1 class="home__title">안녕하세요,<br />집구석 모험가입니다.</h1>
-      <h2 class="home__description">오늘을 모험하는 리액트 개발자입니다.</h2>
-      <button class="home__contact">CONTACT ME</button>
-    </section>
+    <div class="work__projects">
+      <a href="" class="project" target="_blank" data-type="front-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>박기사 보드판</h3>
+          <span>Java, Android</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="front-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>동담당</h3>
+          <span>Dart, Flutter</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="front-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>코코아 클론</h3>
+          <span>HTML, CSS</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="back-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>포트폴리오</h3>
+          <span>HTML, CSS</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="back-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>모멘텀 클론</h3>
+          <span>HTML, CSS, JavaScript</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="back-end">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>유튜브 클론</h3>
+          <span>Node.js, Webpack</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="mobile">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>게시판</h3>
+          <span>Node.js</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="mobile">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>게시판</h3>
+          <span>Node.js</span>
+        </div>
+      </a>
+      <a href="" class="project" target="_blank" data-type="mobile">
+        <img class="project__img" src="imgs/projects/project1.png" alt=""/>
+        <div class="project__description">
+          <h3>게시판</h3>
+          <span>Node.js</span>
+        </div>
+      </a>
+    </div>
+  </section>
+</section>
 
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        내일을 설계하는 건축학을 전공하였고, 오늘을 모험하는 개발자가 되고자
-        합니다.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-magic"></i>
-          </div>
-          <div class="major__title">Weapons</div>
-          <div class="major__description">
-            HTML, SCSS, JavaScript
-          </div>
-          <div class="major__description">
-            Java, Python
-          </div>
-          <div class="major__description">
-            Dart, Swift, Kotlin
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-meteor"></i>
-          </div>
-          <div class="major__title">Active Skills</div>
-          <div class="major__description">
-            React.js, Vue.js
-          </div>
-          <div class="major__description">
-            Express.js, Spring, Django
-          </div>
-          <div class="major__description">
-            Flutter, iOS, Android
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <div class="major__title">Passive Skills</div>
-          <div class="major__description">git, VS Code</div>
+<!-- Testimonials -->
+<section id="testimonials" class="section">
+  <section class="section__container">
+    <h1>명언</h1>
+    <h3><i class="far fa-compass"></i> 삶의 방향성</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="" alt="People" class="testimonial__avatar"/>
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            veniam animi praesentium corporis totam, ex molestiae aperiam
+            neque temporibus quas dolores, ratione laudantium. Est saepe rem
+            et illo? Doloremque, porro?
+          </p>
+          <p class="name"><a href="">소크라테스</a> / 옛날사람</p>
         </div>
       </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="imgs/jobs/hyu.png" alt="HYU" class="job__logo" />
-          <p class="job__name">한양대학교 건축학부</p>
-          <p class="job__div">|</p>
-          <p class="job__period">2009/03 ~ 2016/02</p>
+      <div class="testimonial">
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            veniam animi praesentium corporis totam, ex molestiae aperiam
+            neque temporibus quas dolores, ratione laudantium. Est saepe rem
+            et illo? Doloremque, porro?
+          </p>
+          <p class="name"><a href="">소크라테스</a> / 옛날사람</p>
         </div>
-        <div class="job">
-          <img src="imgs/jobs/lotte.png" alt="lotte e&c" class="job__logo" />
-          <p class="job__name">롯데건설</p>
-          <p class="job__div">|</p>
-          <p class="job__period">2016/02 ~ 2021/10</p>
-        </div>
+        <img src="" alt="People" class="testimonial__avatar"/>
       </div>
-    </section>
+    </div>
+  </section>
+</section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container"><h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>삼각형 인재가 되고 싶은 개발자 협업하는 개발자 성장하는 개발자</p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>React.js</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Node.js</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li>
-                  <span>VS Code</span>
-                  <span>1</span>
-                  <span>2</span>
-                  <span>3</span>
-                  <span>5</span>
-                </li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">ETC</h3>
-              <ul class="etc__list">
-                <li>
-                  <span>git</span>
-                  <span>1</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div></div>
-      
-    </section>
+<!-- Contact -->
+<section id="contact" class="section">
+  <h1 class="contact__title">편하게 연락주세요 ; )</h1>
+  <h2 class="contact__email">reload1bronze@gmail.com</h2>
+  <div class="contact__links">
+    <a href="https://github.com/reload1bronze" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="#" target="_blank">
+      <i class="fa fa-linkedin-square"></i>
+    </a>
+  </div>
+  <p class="contact__rights">&copy;2022 Ninestone - All rights reserved</p>
+</section>
 
-    <!-- Work -->
-    <section id="work" class="section">
-      <section class="section__container">
-        <h1>My work</h1>
-        <h3><i class="fas fa-dragon"></i> Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn active">
-            All<span class="category__count">9</span>
-          </button>
-          <button class="category__btn">
-            Font-end<span class="category__count">3</span>
-          </button>
-          <button class="category__btn">
-            Back-end<span class="category__count">3</span>
-          </button>
-          <button class="category__btn">
-            Mobile<span class="category__count">3</span>
-          </button>
-        </div>
-
-        <div class="work__projects">
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>박기사 보드판</h3>
-              <span>Java, Android</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>동담당</h3>
-              <span>Dart, Flutter</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>코코아 클론</h3>
-              <span>HTML, CSS</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>포트폴리오</h3>
-              <span>HTML, CSS</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>모멘텀 클론</h3>
-              <span>HTML, CSS, JavaScript</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>유튜브 클론</h3>
-              <span>Node.js, Webpack</span>
-            </div>
-          </a>
-          <a href="" class="project" target="_blank">
-            <img class="project__img" src="imgs/projects/project1.png" alt="" />
-            <div class="project__description">
-              <h3>게시판</h3>
-              <span>Node.js</span>
-            </div>
-          </a>
-        </div>
-      </section>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <section class="section__container">
-      <h1>명언</h1>
-      <h3>삶의 방향성</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img src="" alt="People" class="testimonial__avatar" />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              veniam animi praesentium corporis totam, ex molestiae aperiam
-              neque temporibus quas dolores, ratione laudantium. Est saepe rem
-              et illo? Doloremque, porro?
-            </p>
-            <p class="name"><a href="">소크라테스</a> / 옛날사람</p>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              veniam animi praesentium corporis totam, ex molestiae aperiam
-              neque temporibus quas dolores, ratione laudantium. Est saepe rem
-              et illo? Doloremque, porro?
-            </p>
-            <p class="name"><a href="">소크라테스</a> / 옛날사람</p>
-          </div>
-          <img src="" alt="People" class="testimonial__avatar" />
-        </div>
-      </div>
-      </section>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">편하게 연락주세요 ; )</h1>
-      <h2 class="contact__email">reload1bronze@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/reload1bronze" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fa fa-linkedin-square"></i>
-        </a>
-      </div>
-      <p class="contact__rights">&copy;2022 Ninestone - All rights reserved</p>
-    </section>
-
-    <i class="fas fa-fire"></i>
-    <i class="fas fa-compass"></i>
-    <i class="far fa-compass"></i>
-  </body>
+<button class="arrow-up">
+  <i class="fas fa-chevron-up"></i>
+</button>
+</body>
 </html>
