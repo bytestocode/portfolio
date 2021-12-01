@@ -180,9 +180,13 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-orange);
+}
+
 /* Section common */
 .section {
-  padding: 50px;
+  padding: 80px 50px 50px 50px;
   text-align: center;
   margin: auto;
 }
@@ -371,6 +375,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -392,8 +397,8 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
-  left: 4px;
+  position: absolute;
+  right: 18px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
   pointer-events: none;
@@ -564,6 +569,15 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 20px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -587,14 +601,35 @@ p {
 
   .navbar__toggle-btn {
     display: block;
+    top: 8px;
+    right: 12px;
+    font-size: var(--font-medium);
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
+  .about__majors {
+    margin: 32px 0;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin: 16px 16px 30px 16px;
   }
 
   .skillset {
     flex-direction: column;
+  }
+
+  .category__btn {
+    padding: 8px 16px;
+    margin: 2px;
+  }
+
+  .category__count {
+    display: none;
   }
 
   .project {
@@ -603,5 +638,13 @@ p {
 
   .testimonial__avatar {
     display: none;
+  }
+
+  .arrow-up {
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
   }
 }
